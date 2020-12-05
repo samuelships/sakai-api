@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run clean && tsc",
+    "watch": "npm run clean && tsc -w",
+    "clean": "rimraf -rf dist",
+    "test": "jest src/test --watch"
   },
   "keywords": [],
   "author": "",
