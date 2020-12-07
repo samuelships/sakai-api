@@ -22,4 +22,20 @@ export default class SakaiAPI {
 
         axiosCookieJarSupport(this.request);
     }
+
+    /**
+     * Logs in with student id and password
+     * @param {API.LoginRequest} params
+     * @param {string} params.username
+     * @param {string} params.password
+     */
+    login = (params: API.LoginRequest) => this.request.post("direct/session", null, {
+        params: {
+            _username: params.username,
+            _password: params.password
+        }
+    }).then(res => {
+        const [cookie] = res.headers["set-cookie"];
+        this.request.defaults.headers.Cookie = cookie;
+    });
 }
