@@ -38,4 +38,14 @@ export default class SakaiAPI {
         const [cookie] = res.headers["set-cookie"];
         this.request.defaults.headers.Cookie = cookie;
     });
+
+
+
+
+    /**
+      * Gets announcement for a specific site
+      * @param {string} siteId
+      * @returns {AxiosPromise<API.SiteAnnouncementResponse>}
+      */
+    getSiteAnnouncement = (siteId: string): AxiosPromise<API.SiteAnnouncementResponse> => this.request.get<API.SiteAnnouncementResponse>(`direct/announcement/site/${siteId}.json`);
 }
