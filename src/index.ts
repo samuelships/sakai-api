@@ -48,4 +48,10 @@ export default class SakaiAPI {
       * @returns {AxiosPromise<API.SiteAnnouncementResponse>}
       */
     getSiteAnnouncement = (siteId: string): AxiosPromise<API.SiteAnnouncementResponse> => this.request.get<API.SiteAnnouncementResponse>(`direct/announcement/site/${siteId}.json`);
+
+    /**
+      * Gets all announcement for current user
+      * @return {AxiosPromise<API.MyAnnouncementResponse>}
+      */
+    getUserAnnouncement = (): AxiosPromise<API.MyAnnouncementResponse> => this.request.get<API.MyAnnouncementResponse>(`direct/announcement/user.json`);
 }
