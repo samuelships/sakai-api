@@ -54,4 +54,14 @@ export default class SakaiAPI {
       * @return {AxiosPromise<API.MyAnnouncementResponse>}
       */
     getUserAnnouncement = (): AxiosPromise<API.MyAnnouncementResponse> => this.request.get<API.MyAnnouncementResponse>(`direct/announcement/user.json`);
+
+
+
+
+    /**
+     * Gets assignments for a specific site
+     * @param {string} siteId
+     * @returns {AxiosPromise<API.SiteAssignmentResponse>}
+     */
+    getSiteAssignment = (siteId: string): AxiosPromise<API.SiteAssignmentResponse> => this.request.get<API.SiteAssignmentResponse>(`direct/assignment/site/${siteId}.json`);
 }
