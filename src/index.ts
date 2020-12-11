@@ -72,4 +72,10 @@ export default class SakaiAPI {
      * @return {AxiosPromise<API.ItemAssignmentResponse>}
      */
     getItemAssignment = (assignmentId: string): AxiosPromise<API.ItemAssignmentResponse> => this.request.get<API.ItemAssignmentResponse>(`direct/assignment/item/${assignmentId}.json`);
+
+    /**
+     * Gets all assignments for current user
+     * @return {AxiosPromise<API.MyAssignmentResponse>}
+     */
+    getMyAssignment = (): AxiosPromise<API.MyAssignmentResponse> => this.request.get<API.MyAssignmentResponse>(`direct/assignment/my.json`);
 }
