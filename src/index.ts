@@ -94,4 +94,13 @@ export default class SakaiAPI {
      * @returns {AxiosPromise<API.MyCalendarResponse>}
      */
     getMyCalendar = (): AxiosPromise<API.MyCalendarResponse> => this.request.get<API.MyCalendarResponse>(`direct/calendar/my.json`);
+
+    /**
+     * Gets calendar event for a specific site
+     * @param {API.EventCalendarRequest} params
+     * @param {string} params.siteId
+     * @param {string} params.eventId
+     * @returns {AxiosPromise<API.EventCalendarResponse>}
+     */
+    getEventCalendar = (params: API.EventCalendarRequest): AxiosPromise<API.EventCalendarResponse> => this.request.get<API.EventCalendarResponse>(`direct/calendar/event/${params.siteId}/${params.eventId}.json`);
 }
