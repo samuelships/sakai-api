@@ -23,6 +23,7 @@ export default class SakaiAPI {
         axiosCookieJarSupport(this.request);
     }
 
+
     /**
      * Logs in with student id and password
      * @param {API.LoginRequest} params
@@ -42,6 +43,7 @@ export default class SakaiAPI {
 
 
 
+
     /**
       * Gets announcement for a specific site
       * @param {string} siteId
@@ -49,11 +51,13 @@ export default class SakaiAPI {
       */
     getSiteAnnouncement = (siteId: string): AxiosPromise<API.SiteAnnouncementResponse> => this.request.get<API.SiteAnnouncementResponse>(`direct/announcement/site/${siteId}.json`);
 
+    
     /**
       * Gets all announcement for current user
       * @return {AxiosPromise<API.MyAnnouncementResponse>}
       */
     getUserAnnouncement = (): AxiosPromise<API.MyAnnouncementResponse> => this.request.get<API.MyAnnouncementResponse>(`direct/announcement/user.json`);
+
 
 
 
@@ -73,11 +77,13 @@ export default class SakaiAPI {
      */
     getItemAssignment = (assignmentId: string): AxiosPromise<API.ItemAssignmentResponse> => this.request.get<API.ItemAssignmentResponse>(`direct/assignment/item/${assignmentId}.json`);
 
+
     /**
      * Gets all assignments for current user
      * @return {AxiosPromise<API.MyAssignmentResponse>}
      */
     getMyAssignment = (): AxiosPromise<API.MyAssignmentResponse> => this.request.get<API.MyAssignmentResponse>(`direct/assignment/my.json`);
+
 
 
 
@@ -89,11 +95,13 @@ export default class SakaiAPI {
      */
     getSiteCalendar = (siteId: string): AxiosPromise<API.SiteCalendarResponse> => this.request.get<API.SiteCalendarResponse>(`direct/calendar/site/${siteId}.json`);
 
+
     /**
      * Gets all calendars for current user
      * @returns {AxiosPromise<API.MyCalendarResponse>}
      */
     getMyCalendar = (): AxiosPromise<API.MyCalendarResponse> => this.request.get<API.MyCalendarResponse>(`direct/calendar/my.json`);
+
 
     /**
      * Gets calendar event for a specific site
@@ -103,4 +111,14 @@ export default class SakaiAPI {
      * @returns {AxiosPromise<API.EventCalendarResponse>}
      */
     getEventCalendar = (params: API.EventCalendarRequest): AxiosPromise<API.EventCalendarResponse> => this.request.get<API.EventCalendarResponse>(`direct/calendar/event/${params.siteId}/${params.eventId}.json`);
+
+
+
+
+
+    /**
+     * Gets sites for current user
+     * @returns {AxiosPromise<API.SiteResponse>}
+     */
+    getSite = (): AxiosPromise<API.SiteResponse> => this.request.get<API.SiteResponse>(`direct/site.json`);
 }
