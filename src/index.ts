@@ -51,7 +51,7 @@ export default class SakaiAPI {
       */
     getSiteAnnouncement = (siteId: string): AxiosPromise<API.SiteAnnouncementResponse> => this.request.get<API.SiteAnnouncementResponse>(`direct/announcement/site/${siteId}.json`);
 
-    
+
     /**
       * Gets all announcement for current user
       * @return {AxiosPromise<API.MyAnnouncementResponse>}
@@ -121,4 +121,15 @@ export default class SakaiAPI {
      * @returns {AxiosPromise<API.SiteResponse>}
      */
     getSite = (): AxiosPromise<API.SiteResponse> => this.request.get<API.SiteResponse>(`direct/site.json`);
+
+
+
+
+
+    /**
+    * Gets content for a specific site
+    * @param {string} siteId
+    * @returns {AxiosPromise<API.SiteContentResponse>}
+    */
+    getSiteContent = (siteId: string): AxiosPromise<API.SiteContentResponse> => this.request.get<API.SiteContentResponse>(`direct/content/site/${siteId}.json`);
 }
