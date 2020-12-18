@@ -132,4 +132,11 @@ export default class SakaiAPI {
     * @returns {AxiosPromise<API.SiteContentResponse>}
     */
     getSiteContent = (siteId: string): AxiosPromise<API.SiteContentResponse> => this.request.get<API.SiteContentResponse>(`direct/content/site/${siteId}.json`);
+
+    
+    /**
+    * Gets content for current user
+    * @returns {AxiosPromise<API.MyContentResponse>}
+    */
+   getMyContent = (): AxiosPromise<API.MyContentResponse> => this.request.get<API.MyContentResponse>(`direct/content/my.json`);
 }
