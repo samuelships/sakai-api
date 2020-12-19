@@ -5,3 +5,4 @@ export * from "./assignment";
 export * from "./calendar";
 export * from "./site";
 export * from "./content";
+export * from "./syllabus";
