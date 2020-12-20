@@ -70,3 +70,145 @@ const SakaiAPI = require("sakai-api").default;
     }
 })();
 ```
+
+## API
+
+* `SakaiAPI`
+  * [`new SakaiAPI(config)`](#new)
+  * [`.login(params)`](#login)
+  * [`.getSiteAnnouncement(siteId)`](#getSiteAnnouncement)
+  * [`.getUserAnnouncement()`](#getUserAnnouncement)
+  * [`.getSiteAssignment(siteId)`](#getSiteAssignment)
+  * [`.getItemAssignment(assignmentId)`](#getItemAssignment)
+  * [`.getMyAssignment()`](#getMyAssignment)
+  * [`.getSiteCalendar(siteId)`](#getSiteCalendar)
+  * [`.getMyCalendar()`](#getMyCalendar)
+  * [`.getEventCalendar(params)`](#getEventCalendar)
+  * [`.getSite()`](#getSite)
+  * [`.getSiteContent(siteId)`](#getSiteContent)
+
+
+<a name="new"></a>
+#### `SakaiAPI.new(config)`
+
+Initialize new SakaiAPI.
+
+| Param          | Type     | Description                      |
+| -------------- | -------- | -------------------------------- |
+| config.baseUrl | `String` | Baseurl - your institution's url |
+
+* * *
+
+<a name="login"></a>
+#### `SakaiAPI.login(params)` => `null`
+
+Returns the extracted meaning from a sentence, based on the context. 
+
+| Param           | Type     | Description |
+| --------------- | -------- | ----------- |
+| params.username | `String` | Username    |
+| params.password | `String` | Password    |
+
+* * *
+
+<a name="getSiteAnnouncement"></a>
+#### `SakaiAPI.getSiteAnnouncement(siteId)` => `Promise`
+
+Gets announcement for a specific site
+
+| Param  | Type     | Description |
+| ------ | -------- | ----------- |
+| siteId | `String` | Site ID     |
+
+* * *
+
+<a name="getUserAnnouncement"></a>
+#### `SakaiAPI.getUserAnnouncement()` => `Promise`
+
+Gets all announcement for current user
+
+* * *
+
+<a name="getSiteAssignment"></a>
+#### `SakaiAPI.getSiteAssignment(siteId)` => `Promise`
+
+Gets assignments for a specific site
+
+| Param  | Type     | Description |
+| ------ | -------- | ----------- |
+| siteId | `String` | Site ID     |
+
+* * *
+
+<a name="getItemAssignment"></a>
+#### `SakaiAPI.getItemAssignment(assignmentId)` => `Promise`
+
+Gets an assignment
+
+| Param        | Type     | Description   |
+| ------------ | -------- | ------------- |
+| assignmentId | `String` | Assignment ID |
+
+* * *
+
+<a name="getMyAssignment"></a>
+#### `SakaiAPI.getMyAssignment()` => `Promise`
+
+Gets all assignments for current user
+
+* * *
+
+<a name="getSiteCalendar"></a>
+#### `SakaiAPI.getSiteCalendar(siteId)` => `Promise`
+
+Gets calendar for a specific site
+
+| Param  | Type     | Description |
+| ------ | -------- | ----------- |
+| siteId | `String` | Site ID     |
+
+* * *
+
+<a name="getMyCalendar"></a>
+#### `SakaiAPI.getMyCalendar()` => `Promise`
+
+Gets all calendars for current user
+
+* * *
+
+<a name="getEventCalendar"></a>
+#### `SakaiAPI.getEventCalendar(params)` => `Promise`
+
+Gets calendar event for a specific site
+
+| Param          | Type     | Description |
+| -------------- | -------- | ----------- |
+| params.siteId  | `String` | Site ID     |
+| params.eventId | `String` | Event ID    |
+
+* * *
+
+<a name="getSite"></a>
+#### `SakaiAPI.getSite()` => `Promise`
+
+Gets sites for current user
+
+* * *
+
+<a name="getSiteContent"></a>
+#### `SakaiAPI.getSiteContent(siteId)`
+
+Gets content for a specific site
+
+| Param  | Type     | Description |
+| ------ | -------- | ----------- |
+| siteId | `String` | Site ID     |
+
+* * *
+
+<a name="getMyContent"></a>
+#### `SakaiAPI.getMyContent()`
+
+Gets content for current user
+
+* * *
