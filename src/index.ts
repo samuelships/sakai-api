@@ -1,6 +1,6 @@
 import axiosCookieJarSupport from "axios-cookiejar-support";
 import axios, { AxiosInstance, AxiosPromise, AxiosRequestConfig } from "axios";
-import API from "./types";
+import * as API from "./types";
 import { CookieJar } from "tough-cookie";
 
 export default class SakaiAPI {

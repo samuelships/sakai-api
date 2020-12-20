@@ -5,7 +5,6 @@ export interface SiteSyllabusResponse {
     entityURL: string,
     entityTitle: string
 
-    items: [],
     redirectUrl: string,
     siteId: string,
 }

@@ -7,12 +7,12 @@ export interface SiteCalendarResponse extends BaseResponse {
 export interface MyCalendarResponse extends SiteCalendarResponse {
 }
 
-interface EventCalendarRequest {
+export interface EventCalendarRequest {
     siteId: string,
     eventId: string,
 }
 
-interface EventCalendarResponse extends Calendar {
+export interface EventCalendarResponse extends Calendar {
 }
 
 
