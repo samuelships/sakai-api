@@ -1,17 +1,22 @@
 {
-  "name": "sakai-api2",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "sakai-api",
+  "version": "0.1.0",
+  "description": "Unofficial Sakai API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "npm run clean && tsc",
     "watch": "npm run clean && tsc -w",
     "clean": "rimraf -rf dist",
     "test": "jest src/test --watch"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "sakai",
+    "sakai api",
+    "api"
+  ],
+  "author": "Adjei Samuel Besemuna <@besemuna>",
+  "license": "MIT",
   "devDependencies": {
     "@types/tough-cookie": "^4.0.0",
     "typescript": "^4.1.2"
