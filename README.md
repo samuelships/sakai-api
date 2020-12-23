@@ -22,7 +22,7 @@ const SakaiAPI = require("sakai-api").default;
 ```
 
 
-## Gettings announcement for a site
+## Getting announcement for a site
 ```js
 const SakaiAPI = require("sakai-api").default;
 
@@ -36,7 +36,7 @@ const SakaiAPI = require("sakai-api").default;
 })();
 ```
 
-## Gettings assignments for a site
+## Getting assignments for a site
 ```js
 const SakaiAPI = require("sakai-api").default;
 
