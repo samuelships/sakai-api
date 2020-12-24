@@ -1,0 +1,37 @@
+{
+    "entityPrefix": "announcement",
+    "announcement_collection": [
+        {
+            "announcementId": "xxxxx",
+            "attachments": [],
+            "body": "xxxxx",
+            "channel": "main",
+            "createdByDisplayName": "xxxxx",
+            "createdOn": 1589200408971,
+            "id": "xxxxx",
+            "siteId": "xxxxx",
+            "siteTitle": "xxxxx",
+            "title": "xxxxx",
+            "entityReference": "\/announcement\/xxxxx",
+            "entityURL": "https:\/\/sakai.ug.edu.gh\/direct\/announcement\/xxxxxx",
+            "entityId": "xxxxx",
+            "entityTitle": "xxxxx"
+        },
+        {
+            "announcementId": "xxxxx",
+            "attachments": [],
+            "body": "xxxxx",
+            "channel": "main",
+            "createdByDisplayName": "xxxxx",
+            "createdOn": 1589200408971,
+            "id": "xxxxx",
+            "siteId": "xxxxx",
+            "siteTitle": "xxxxx",
+            "title": "xxxxx",
+            "entityReference": "\/announcement\/xxxxx",
+            "entityURL": "https:\/\/sakai.ug.edu.gh\/direct\/announcement\/xxxxxx",
+            "entityId": "xxxxx",
+            "entityTitle": "xxxxx"
+        }
+    ]
+}
