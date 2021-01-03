@@ -16,3 +16,17 @@ describe("getSiteAssignment", () => {
         expect(response.status).toBe(200);
     });
 });
+
+describe("getUserAnnouncement", () => {
+    it("respond with success", async () => {
+        const api = new SakaiApi();
+        const adapter = new MockAdapter(api.request);
+
+        adapter.
+            onGet(new RegExp("/direct/announcement/user.json"))
+            .reply(200, loadTestData("getUserAnnouncement.json"), {});
+
+        const response = await api.getUserAnnouncement();
+        expect(response.status).toBe(200);
+    });
+});
