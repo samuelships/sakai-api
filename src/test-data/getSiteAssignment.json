@@ -1,0 +1,121 @@
+{
+    "entityPrefix": "assignment",
+    "assignment_collection": [
+        {
+            "access": "SITE",
+            "allPurposeItemText": null,
+            "attachments": [],
+            "author": "xxxx",
+            "authorLastModified": null,
+            "closeTime": {
+                "epochSecond": 1589995200,
+                "nano": 0
+            },
+            "closeTimeString": "2020-05-20T17:20:00Z",
+            "content": null,
+            "context": "129d7f9a-1250-4547-b15a-95a9a391d200",
+            "creator": null,
+            "dropDeadTime": {
+                "epochSecond": 1589995200,
+                "nano": 0
+            },
+            "dropDeadTimeString": "2020-05-20T17:20:00Z",
+            "dueTime": {
+                "epochSecond": 1589995200,
+                "nano": 0
+            },
+            "dueTimeString": "2020-05-20T17:20:00Z",
+            "gradeScale": "xxxxx",
+            "gradeScaleMaxPoints": null,
+            "gradebookItemId": null,
+            "gradebookItemName": null,
+            "groups": [],
+            "id": "xxxxx",
+            "instructions": "xxxxx",
+            "modelAnswerText": null,
+            "openTime": {
+                "epochSecond": 1589736000,
+                "nano": 0
+            },
+            "openTimeString": "2020-05-17T17:20:00Z",
+            "position": 0,
+            "privateNoteText": null,
+            "section": "",
+            "status": "CLOSED",
+            "submissionType": "TEXT_AND_ATTACHMENT_ASSIGNMENT_SUBMISSION",
+            "timeCreated": {
+                "epochSecond": 1589736523,
+                "nano": 0
+            },
+            "timeLastModified": {
+                "epochSecond": 1589736710,
+                "nano": 0
+            },
+            "title": "xxxxx",
+            "allowResubmission": false,
+            "draft": false,
+            "entityReference": "\/assignment\/xxxxx",
+            "entityURL": "https:\/\/xxxxx\/direct\/assignment\/xxxxx",
+            "entityId": "xxxxx",
+            "entityTitle": "xxxxx"
+        },
+        {
+            "access": "SITE",
+            "allPurposeItemText": null,
+            "attachments": [],
+            "author": "xxxxx",
+            "authorLastModified": null,
+            "closeTime": {
+                "epochSecond": 1602315000,
+                "nano": 0
+            },
+            "closeTimeString": "2020-10-10T07:30:00Z",
+            "content": null,
+            "context": "xxxxx",
+            "creator": null,
+            "dropDeadTime": {
+                "epochSecond": 1602315000,
+                "nano": 0
+            },
+            "dropDeadTimeString": "2020-10-10T07:30:00Z",
+            "dueTime": {
+                "epochSecond": 1602315000,
+                "nano": 0
+            },
+            "dueTimeString": "2020-10-10T07:30:00Z",
+            "gradeScale": "UNGRADED_GRADE_TYPE",
+            "gradeScaleMaxPoints": null,
+            "gradebookItemId": null,
+            "gradebookItemName": null,
+            "groups": [],
+            "id": "xxxxx",
+            "instructions": "xxxxx",
+            "modelAnswerText": null,
+            "openTime": {
+                "epochSecond": 1602228600,
+                "nano": 0
+            },
+            "openTimeString": "2020-10-09T07:30:00Z",
+            "position": 0,
+            "privateNoteText": null,
+            "section": "",
+            "status": "CLOSED",
+            "submissionType": "TEXT_AND_ATTACHMENT_ASSIGNMENT_SUBMISSION",
+            "timeCreated": {
+                "epochSecond": 1602167207,
+                "nano": 0
+            },
+            "timeLastModified": {
+                "epochSecond": 1602167303,
+                "nano": 0
+            },
+            "title": "xxxxx",
+            "allowResubmission": false,
+            "draft": false,
+            "entityReference": "\/assignment\/xxxxx",
+            "entityURL": "https:\/\/xxxxx\/direct\/assignment\/xxxxx",
+            "entityId": "xxxxx",
+            "entityTitle": "xxxxx"
+        }
+    ]
+}
