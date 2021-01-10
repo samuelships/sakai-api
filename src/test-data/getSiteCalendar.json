@@ -1,0 +1,26 @@
+{
+    "entityPrefix": "calendar",
+    "calendar_collection": [
+        {
+            "assignmentId": "",
+            "creator": "xxxxx",
+            "description": "xxxxx",
+            "duration": 0,
+            "eventIcon": null,
+            "eventId": "xxxxx",
+            "firstTime": {
+                "display": "Jun 15, 2017 2:00 pm",
+                "time": 1497535200000
+            },
+            "recurrenceRule": null,
+            "reference": "xxxxx",
+            "siteId": "xxxxx",
+            "siteName": "xxxxx",
+            "title": "xxxxx",
+            "type": "Deadline",
+            "entityReference": "\/calendar",
+            "entityURL": "https:\/\/sakai.ug.edu.gh\/direct\/calendar",
+            "entityTitle": "xxxxx"
+        }
+    ]
+}
