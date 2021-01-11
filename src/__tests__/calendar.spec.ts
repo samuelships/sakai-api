@@ -16,3 +16,18 @@ describe("getSiteCalendar", () => {
         expect(response.status).toBe(200);
     });
 });
+
+
+describe("getMyCalendar", () => {
+    it("respond with success", async () => {
+        const api = new SakaiApi();
+        const adapter = new MockAdapter(api.request);
+
+        adapter.
+            onGet(new RegExp("/direct/calendar/my.json"))
+            .reply(200, loadTestData("getMyCalendar.json"), {});
+
+        const response = await api.getMyCalendar();
+        expect(response.status).toBe(200);
+    });
+});
