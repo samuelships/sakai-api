@@ -1,0 +1,51 @@
+{
+    "entityPrefix": "content",
+    "content_collection": [
+        {
+            "author": "xxxxx",
+            "authorId": "xxxxx",
+            "container": "\/content\/group\/",
+            "copyrightAlert": null,
+            "description": null,
+            "endDate": null,
+            "fromDate": null,
+            "modifiedDate": "20200422153708608",
+            "numChildren": 27,
+            "quota": null,
+            "size": 27,
+            "title": "xxxxx",
+            "type": "collection",
+            "url": "xxxxx",
+            "usage": "140536832",
+            "webLinkUrl": null,
+            "hidden": false,
+            "visible": true,
+            "entityReference": "\/content",
+            "entityURL": "xxxxx",
+            "entityTitle": "xxxxx"
+        },
+        {
+            "author": "xxxxx",
+            "authorId": "xxxxx",
+            "container": "xxxxx",
+            "copyrightAlert": null,
+            "description": null,
+            "endDate": null,
+            "fromDate": null,
+            "modifiedDate": "20200516140731496",
+            "numChildren": 0,
+            "quota": null,
+            "size": 70305359,
+            "title": "ARRAYvideo1.mp4",
+            "type": "video\/mp4",
+            "url": "xxxxx",
+            "usage": null,
+            "webLinkUrl": null,
+            "hidden": false,
+            "visible": true,
+            "entityReference": "\/content",
+            "entityURL": "xxxxx",
+            "entityTitle": "ARRAYvideo1.mp4"
+        }
+    ]
+}
