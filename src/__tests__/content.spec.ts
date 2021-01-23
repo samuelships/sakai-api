@@ -16,3 +16,17 @@ describe("getSiteContent", () => {
         expect(response.status).toBe(200);
     });
 });
+
+describe("getMyContent", () => {
+    it("respond with success", async () => {
+        const api = new SakaiApi();
+        const adapter = new MockAdapter(api.request);
+
+        adapter.
+            onGet(new RegExp("/direct/content/my.json"))
+            .reply(200, loadTestData("getMyContent.json"), {});
+
+        const response = await api.getMyContent();
+        expect(response.status).toBe(200);
+    });
+});
